@@ -2,5 +2,5 @@
   "version": 2,
   "name": "weather-journal-app",
   "builds": [{ "src": "server.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "/website" }]
+  "routes": [{ "src": "/(.*)", "dest": "/website/index.html" }]
 }
