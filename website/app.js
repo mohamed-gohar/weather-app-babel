@@ -10100,12 +10100,12 @@
             case 15:
               _context.prev = 15;
               _context.t0 = _context["catch"](0);
-              entryHolder.innerHTML = "<span style=\"color: #ffd5e3\">".concat(_context.t0, "</span>");
 
               if (!navigator.onLine) {
-                entryHolder.innerHTML = "<span style=\"color: #ffd5e3\">Internet connection lost</span>"; //error message
+                entryHolder.innerHTML = "<span style=\"color: #ffd5e3\">You're offline. Check your connection.</span>"; //error message
               }
 
+              entryHolder.innerHTML = "<span style=\"color: #ffd5e3\">".concat(_context.t0, "</span>");
               throw _context.t0;
 
             case 20:

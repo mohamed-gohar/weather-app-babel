@@ -54,10 +54,10 @@ const getExData = async (url) => {
       throw error;
     }
   } catch (err) {
-    entryHolder.innerHTML = `<span style="color: #ffd5e3">${err}</span>`;
     if (!navigator.onLine) {
-      entryHolder.innerHTML = `<span style="color: #ffd5e3">Internet connection lost</span>`; //error message
+      entryHolder.innerHTML = `<span style="color: #ffd5e3">You're offline. Check your connection.</span>`; //error message
     }
+    entryHolder.innerHTML = `<span style="color: #ffd5e3">${err}</span>`;
     throw err;
   }
 };
