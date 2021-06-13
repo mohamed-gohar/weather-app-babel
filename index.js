@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cors());
 
 // Initialize the main project folder
-app.use(express.static("website"));
+app.use(express.static(path.join(__dirname, "website")));
 
 /* server and routes */
 
@@ -30,9 +30,9 @@ const server = app.listen(port, () => {
 });
 
 //set routes
-app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "/website/index.html"));
-});
+// app.get("/", function (req, res) {
+//   res.sendFile(path.join(__dirname, "/website/index.html"));
+// });
 
 app.get("/getData", function (req, res) {
   res.send(projectData);
