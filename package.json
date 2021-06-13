@@ -2,10 +2,10 @@
   "name": "weather-journal-app",
   "version": "1.0.0",
   "description": "## Overview This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
+    "start": "nodemon server.js",
     "babel": "npx babel app.js --watch --out-dir website",
     "rollup": "npx rollup --watch.include app.js --config"
   },
