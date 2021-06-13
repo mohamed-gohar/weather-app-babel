@@ -1,6 +1,6 @@
 // Require Express to run server and routes
 const express = require("express");
-
+const path = require("path");
 // Start up an instance of app
 const app = express();
 
