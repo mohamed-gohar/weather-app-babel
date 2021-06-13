@@ -30,6 +30,10 @@ const server = app.listen(port, () => {
 });
 
 //set routes
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "/website/index.html"));
+});
+
 app.get("/getData", function (req, res) {
   res.send(projectData);
 });
