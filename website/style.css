@@ -35,7 +35,8 @@ body {
   min-height: 150px;
   max-height: 442px;
   overflow: auto;
-  /* word-break: break-all; */
+  /* word-wrap: break-word; */
+  word-break: break-word;
 }
 @media only screen and (min-width: 700px) {
   .entry {

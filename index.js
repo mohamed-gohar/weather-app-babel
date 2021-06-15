@@ -29,11 +29,11 @@ const server = app.listen(port, () => {
   console.log(`server states on port ${port}`);
 });
 
-//set routes
 // app.get("/", function (req, res) {
 //   res.sendFile(path.join(__dirname, "/website/index.html"));
 // });
 
+//set routes
 app.get("/getData", function (req, res) {
   res.send(projectData);
 });
